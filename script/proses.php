@@ -1,5 +1,15 @@
 <?php
 include 'koneksi.php';
+$sql = "SELECT MAX(id_matrik) as max_id FROM pendaftaran";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $next_id = $row['max_id'] + 1; // Mengambil ID berikutnya
+} else {
+    $next_id = 1; // Jika tabel kosong, mulai dari ID 1
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Periksa apakah data dikirimkan melalui metode POST
@@ -59,7 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Jika data tidak dikirimkan melalui metode POST, tampilkan pesan kesa';
 }
 
-$id = mysqli_query($conn, "INSERT INTO pendaftaran VALUE('','$pendidikan','$nilai1','$pengalaman','$nilai2','$skil','$nilai3')");
+$id = mysqli_query($conn, "INSERT INTO pendaftaran VALUE('','$next_id','$pendidikan','$nilai1','$pengalaman','$nilai2','$skil','$nilai3')");
 
 echo "<script>alert('Data Berhasil ditambah')</script>";
 header("location: /saw/index.php");
