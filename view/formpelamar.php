@@ -13,13 +13,13 @@
         <form action="../script/proses.php" method="post">
             <tr>
                 <td>Pendidikan</td>
-                <td>:<input name="pendidikan" type="pendidikan" id="pendidikan"></input></td><br><br>
+                <td>:<input name="pendidikan" type="pendidikan" id="pendidikan" required></input></td><br><br>
 
                 <td>pengalaman</td>
-                <td>:<input name="pengalaman" type="pengalaman" id="pengalaman"></input></td><br><br>
+                <td>:<input name="pengalaman" type="pengalaman" id="pengalaman" required></input></td><br><br>
 
                 <td>Skil</td>
-                <td>:<input name="skil" type="skil" id="skil"></input></td><br><br>
+                <td>:<input name="skil" type="skil" id="skil" required></input></td><br><br>
 
                 <input type="submit" value="send">
             </tr>

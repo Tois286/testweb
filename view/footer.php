@@ -7,7 +7,7 @@
 </head>
 <footer>
     <center>
-        <p><a href="https://www.instagram.com/tois_n10/">
+        <p><a href="https://github.com/Tois286">
             Toto Iswanto</a>|2023 TestingWeb</p>
     </center>
 </footer>
