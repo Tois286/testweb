@@ -24,7 +24,7 @@
             echo "<td>" . $row['pengalaman'] . "</td>";
             echo "<td>" . $row['skil'] . "</td>";
             // Tambahkan tombol "Update" dengan tautan ke halaman update.php dengan parameter id_pelamar
-            echo "<td><a href='script/update.php?id=" . $row['id_pelamar'] . "'>Update</a>|<a href='script/delete.php?id=" . $row['id_pelamar'] . "'>delete</a></td>";
+            echo "<td><a href='script/update.php?id=" . $row['id_pelamar'] . "'>Update</a>|<a href='script/delete.php?id=" . $row['id_pelamar'] . "'>delete</a>|<a href='script/prosesMethod.php?id=" . $row['id_pelamar'] . "'>Grande</a></td>";
             
             echo "</tr>";
         }
