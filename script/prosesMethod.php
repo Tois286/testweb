@@ -1,3 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style the container for the result */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the headings */
+h3 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Style the result details */
+.result-details {
+    margin-top: 20px;
+}
+
+.result-details h4 {
+    color: #333;
+}
+
+/* Style the status message */
+.status {
+    font-weight: bold;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Style the buttons */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button-container a:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    
 <?php
 include 'koneksi.php';
 
@@ -60,3 +122,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
     echo "Permintaan tidak valid.";
 }
 ?>
+
+</body>
+</html>
